@@ -1,14 +1,15 @@
 import React, { useState } from "react";
 import "../styles/searchbar.css";
 
-
 export function SearchBar() {
+
     const [search, setSearch] = useState("");
     const [chatbotResponse, setChatbotResponse] = useState("");
 
     const handleUrl = (e) => {
         setSearch(e.target.value);
     }
+
 
     const searchCity = async () => {
         try {
@@ -21,6 +22,7 @@ export function SearchBar() {
         } catch (error) {
             console.error('Error:', error);
         }
+
     }
 
     return (

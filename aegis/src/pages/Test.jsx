@@ -6,6 +6,7 @@ import Popup from '../components/popup'
 import "../styles/Test.css"
 
 
+
 const topics = [
   {
     title: 'SQL-Injection',
@@ -78,7 +79,8 @@ const topics = [
 
   return (
     <div className="test">
-      <h1>Project Aegis</h1>
+      <SearchBar/>
+      <CheckVulnerability/>
       <TopicSnippet topics={topics} openPopup={openPopup} />
       {popupInfo && (
         <div ref={popupRef}>
