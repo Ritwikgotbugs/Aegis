@@ -1,0 +1,46 @@
+.topic-snippet-container {
+    margin-bottom: 20px;
+}
+
+.topic-list {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+
+    gap: 20px;
+}
+
+.topic-item {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 5px;
+    padding: 10px;
+    width: 200px;
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.3s ease;
+}
+
+.topic-item:hover {
+    box-shadow: 0 0 20px cyan;
+    transform: scale(1.1);
+}
+
+.speedometer-wrapper {
+    margin-bottom: 10px;
+}
+
+.topic-content {
+    flex-grow: 1;
+}
+
+.topic-title {
+    margin: 0;
+    margin-bottom: 5px;
+    color: #007bff;
+    cursor: grab;
+}
+
+.topic-description {
+    margin: 0;
+}
