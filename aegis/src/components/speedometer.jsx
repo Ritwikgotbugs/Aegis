@@ -11,7 +11,6 @@ const Speedometer = ({ percentage }) => {
       return 'red';
     }
   };
-
   const getTransform = () => {
     const rotate = (percentage / 100) * 180 - 45;
     return `rotate(${rotate}deg)`;
