@@ -8,7 +8,9 @@ function header() {
     <div className='header'>
       <div className='left_side'>
         <img src={Icon} />
+        <Link to="/">
         <h1>AEGIS</h1>
+        </Link>
       </div>
       <div className='right_side'>
       <Link to="/">Home</Link>
