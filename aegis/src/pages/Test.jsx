@@ -1,9 +1,10 @@
-import React, { useEffect, useRef, useState } from 'react';
-import TopicSnippet from '../components/homepage';
-import Popup from '../components/popup';
-import { SearchBar } from '../components/searchbar';
-import "../styles/Test.css";
-import { CheckVulnerability } from '../components/checker';
+import React, { useState, useEffect, useRef } from 'react';
+import TopicSnippet from '../components/homepage';  
+import TSnippet from '../components/TopicSnippet';
+import '../App.css';
+import Popup from '../components/popup'
+import "../styles/Test.css"
+
 
 
 const topics = [
@@ -58,13 +59,12 @@ const topics = [
   }
 ];
 
- export function Test  (){
+ export function Test() {
   const [popupInfo, setPopupInfo] = useState(null);
   const popupRef = useRef(null);
 
   useEffect(() => {
     if (popupInfo) {
-      
       popupRef.current.scrollIntoView({ behavior: 'smooth', block: 'start' });
     }
   }, [popupInfo]);
@@ -95,4 +95,4 @@ const topics = [
   );
 };
 
-export default Test
+export default Test;
