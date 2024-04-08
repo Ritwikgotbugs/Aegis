@@ -1,14 +1,12 @@
 import React from 'react';
-import { useState } from 'react';
+import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import './App.css';
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Navbar from './components/Navbar';
+import { Aegis } from './components/Aegis';
 import Footer from './components/Footer';
+import Navbar from './components/Navbar';
+import About from './pages/About';
 import Home from './pages/Home';
-import About from './pages/About'; 
-import Test from './pages/Test'; // Corrected import statement for Test
-import { SearchBar } from './components/searchbar'
-import { Aegis } from './components/Aegis'
+import Test from './pages/Test';
 
 function App() {
   return (
@@ -17,15 +15,13 @@ function App() {
         <Router>
           <Navbar />
           <Routes> 
-            <Route path='/' exact element={<Home />} />
-            <Route path='/about' exact element={<About />} />
-            <Route path='/test' exact element={<Test />} /> {/* Corrected route */}
+            <Route path='/' element={<Home />} />
+            <Route path='/about' element={<About />} />
+            <Route path='/test' element={<Test />} /> 
           </Routes>
           <Footer />
         </Router>
       </div>
-      <Aegis />
-      <SearchBar />
     </>
   )
 }

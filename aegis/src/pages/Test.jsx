@@ -1,8 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
-import TopicSnippet from './components/homepage.jsx';  
-import Popup from './components/popup'
-import './App.css';
-import Speedometer from '../components/speedometer';
+import TopicSnippet from '../components/homepage';
+import Popup from '../components/popup'
+import "../App.css"
 
 
 const topics = [
@@ -92,3 +91,5 @@ const topics = [
     </div>
   );
 };
+
+export default Test

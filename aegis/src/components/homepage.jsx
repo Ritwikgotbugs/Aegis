@@ -15,7 +15,7 @@ const Popup = ({ title, description, onClose }) => {
   );
 };
 
-const TopicSnippet = ({ topics }) => {
+export function TopicSnippet ({ topics }){
   const [popupInfo, setPopupInfo] = useState(null);
 
   const openPopup = (title, description) => {
