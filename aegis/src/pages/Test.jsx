@@ -1,7 +1,9 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import TopicSnippet from '../components/homepage';
-import Popup from '../components/popup'
-import "../styles/Test.css"
+import Popup from '../components/popup';
+import { SearchBar } from '../components/searchbar';
+import "../styles/Test.css";
+import { CheckVulnerability } from '../components/checker';
 
 
 const topics = [
@@ -77,7 +79,8 @@ const topics = [
 
   return (
     <div className="test">
-      <h1>Project Aegis</h1>
+      <SearchBar/>
+      <CheckVulnerability/>
       <TopicSnippet topics={topics} openPopup={openPopup} />
       {popupInfo && (
         <div ref={popupRef}>

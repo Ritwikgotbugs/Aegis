@@ -58,7 +58,11 @@
 h1 {
     font-family: kRegularFont;
     margin: 0;
-    font-size: 40px;
+    font-size: 100px;
+}
+
+h2 {
+    font-size: 50px;
 }
 
 .typer {
@@ -71,3 +75,35 @@ h1 {
     font-size: 30px;
     color: aqua;
 }
+
+body {
+    justify-content: start;
+    display: flex;
+    align-items: start;
+}
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; 
+}
+
+.App {
+    flex-grow: 1; 
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    font-family: 'kRegularFont';
+    margin: 0;
+    font-size: 100px;
+}
+
+.typer {
+    font-size: 30px;
+    font-family: 'kRegularFont';
+    width: 100%;
+}
+

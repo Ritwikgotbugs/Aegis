@@ -1,7 +1,6 @@
 import React from 'react';
-import Icon from '../assets/encrypt2.png';
 import { Link } from "react-router-dom";
-import Icon from '../assets/encrypt.png';
+import Icon from '../assets/logo.png';
 import "../styles/Navbar.css";
 
 function header() {

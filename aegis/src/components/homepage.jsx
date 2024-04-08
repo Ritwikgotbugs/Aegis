@@ -28,7 +28,7 @@ export function TopicSnippet ({ topics }){
 
   return (
     <div className="topic-snippet-container">
-      <h2>Topics</h2>
+      <h2>Code Analysis</h2>
       <div className="topic-list">
         {topics.map((topic, index) => (
           <div key={index} className="topic-item">

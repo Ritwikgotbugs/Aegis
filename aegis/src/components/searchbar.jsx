@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "../styles/searchbar.css"
+import "../styles/searchbar.css";
 export function SearchBar({}) {
     
     const [search, setSearch] = useState("");
@@ -8,6 +8,7 @@ export function SearchBar({}) {
     }
 
     const searchCity = () => {
+        window.location.href = `/test?query="${search}"`
     }
     return (
         <div className="searchBar">
