@@ -1,8 +1,10 @@
 import React, { useState, useEffect, useRef } from 'react';
 import TopicSnippet from '../components/homepage';  
-import Popup from '../components/popup';
 import TSnippet from '../components/TopicSnippet';
 import '../App.css';
+import Popup from '../components/popup'
+import "../styles/Test.css"
+
 
 const topics = [
   {
@@ -75,7 +77,7 @@ const topics = [
   };
 
   return (
-    <div className="app">
+    <div className="test">
       <h1>Project Aegis</h1>
       <TopicSnippet topics={topics} openPopup={openPopup} />
       {popupInfo && (
