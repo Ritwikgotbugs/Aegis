@@ -1,0 +1,59 @@
+@font-face {
+    font-family: 'kRegularFont';
+    src: url('../assets/Outfit/fonts/Outfit-Regular.ttf');
+}
+@font-face {
+    font-family: 'kBoldFont';
+    src: url('../assets/Outfit/fonts/Outfit-Bold.ttf');
+}
+
+
+
+.searchBar {
+    padding-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.searchInput {
+    border-radius: 20px;
+    padding: 16px;
+    border: none;
+    width: 300px;
+    justify-content: center;
+    margin-right: 10px;
+    font-family: kregularFont;
+    transition: padding 0.3s ease-in-out;
+
+}
+.searchInput:focus {
+    outline: none;
+}
+
+.searchInput:hover {
+    padding: 20px;
+    border-radius: 20px;
+    transition: padding 0.3s ease-in-out;
+}
+
+
+.searchButton {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: kregularFont;
+  background-color: #76ABAE;
+  cursor: pointer;
+  color: #000000;
+}
+
+.searchButton:focus{
+    outline: none;
+    border: none;
+}
+.searchButton:hover {
+    box-shadow: 0px 0px 15px rgb(90, 176, 226);
+    transition: 0.3s ease-in-out;
+}

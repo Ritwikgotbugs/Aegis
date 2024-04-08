@@ -43,4 +43,29 @@
 
 .topic-description {
     margin: 0;
+@font-face {
+    font-family: 'kRegularFont';
+    src: url('../assets/Outfit/fonts/Outfit-Regular.ttf');
+}
+@font-face {
+    font-family: 'kBoldFont';
+    src: url('../assets/Outfit/fonts/Outfit-Bold.ttf');
+}
+}
+
+h1 {
+    font-family: kRegularFont;
+    margin: 0;
+    font-size: 40px;
+}
+
+.typer {
+    font-size: 30px;
+    font-family: kRegularFont;
+    width: 100%;
+}
+
+.cursor {
+    font-size: 30px;
+    color: aqua;
 }
