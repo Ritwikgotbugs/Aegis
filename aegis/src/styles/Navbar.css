@@ -3,11 +3,11 @@
     height: 100px;
     display: flex;
     flex-direction: row;
-    background-color: #03001C;
+    background-color: #191919;
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 1000; /* Ensure it's on top of other content */
+    z-index: 1000; 
 }
 
 .header .left_side{
@@ -26,14 +26,15 @@
 
 .header .left_side img {
     width: 70px;
+    padding-left: 20px;
 }
 
 .header .right_side{
-    flex: 50%;
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
+    padding-right: 10px;
 }
 
 .header a {
@@ -41,9 +42,14 @@
     text-decoration: none;
     font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
     margin: 20px;
+    transition: font-size 0.1s ease-in-out;
+    font-size: 20px;
+
+
 }
 
 .header .right_side a:hover {
-    text-decoration: underline;
     color: #ffd700;
+    font-size: 23px;
+    transition: font-size 0.1s ease-in-out;
 }
