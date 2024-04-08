@@ -43,6 +43,8 @@
 
 .topic-description {
     margin: 0;
+}
+
 @font-face {
     font-family: 'kRegularFont';
     src: url('../assets/Outfit/fonts/Outfit-Regular.ttf');
@@ -51,7 +53,7 @@
     font-family: 'kBoldFont';
     src: url('../assets/Outfit/fonts/Outfit-Bold.ttf');
 }
-}
+
 
 h1 {
     font-family: kRegularFont;

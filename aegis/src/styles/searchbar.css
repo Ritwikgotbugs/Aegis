@@ -54,6 +54,6 @@
     border: none;
 }
 .searchButton:hover {
-    box-shadow: 0px 0px 15px rgb(90, 176, 226);
+    box-shadow: 0px 0px 15px rgb(55, 0, 255);
     transition: 0.3s ease-in-out;
 }
