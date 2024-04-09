@@ -112,3 +112,15 @@ button {
 .generate-button:active, .check-button:active {
     transform: scale(0.9);
 }
+
+.down-side {
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    padding: 20px; /* Adjust padding as needed */
+    background-color: rgba(128, 128, 128, 0.466);
+    border-top: 1px solid #ccc;
+    border-radius: 10px;
+    z-index: 1; /* Ensure it's above other content */
+  }
+  
