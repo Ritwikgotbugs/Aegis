@@ -1,9 +1,10 @@
-import React, { useState, useEffect, useRef } from 'react';
-import TopicSnippet from '../components/homepage';  
-import TSnippet from '../components/TopicSnippet';
+import React, { useEffect, useRef, useState } from 'react';
 import '../App.css';
-import Popup from '../components/popup'
-import "../styles/Test.css"
+import { CheckVulnerability } from '../components/checker';
+import TopicSnippet from '../components/homepage';
+import Popup from '../components/popup';
+import { SearchBar } from '../components/searchbar';
+import "../styles/Test.css";
 
 
 
