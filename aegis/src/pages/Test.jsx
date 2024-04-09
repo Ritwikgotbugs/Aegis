@@ -3,7 +3,6 @@ import '../App.css';
 import { CheckVulnerability } from '../components/checker';
 import TopicSnippet from '../components/homepage';
 import Popup from '../components/popup';
-import { SearchBar } from '../components/searchbar';
 import "../styles/Test.css";
 
 
@@ -80,16 +79,16 @@ const topics = [
 
   return (
     <div className="test">
-      <SearchBar/>
-      <CheckVulnerability/>
       <TopicSnippet topics={topics} openPopup={openPopup} />
+      <CheckVulnerability/>
       {popupInfo && (
         <div ref={popupRef}>
           <Popup
             title={popupInfo.title}
             description={popupInfo.description}
             onClose={closePopup}
-          />
+            />
+           
         </div>
       )}
     </div>
