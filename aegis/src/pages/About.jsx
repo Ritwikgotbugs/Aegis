@@ -32,7 +32,7 @@ export function About(){
             <div className="left-side">
                 <ChatComponent onOutputChange={handleOutputChange} />
             </div>
-            <button onClick={() => handleValidation(outputValue)}>Check for Vulnerabilities</button> {/* Call a function to handle validation */}
+            <button className="check-button" onClick={() => handleValidation(outputValue)}>Check for Vulnerabilities</button> {/* Call a function to handle validation */}
             <Validate outputValue={validationOutput} />
         </div>
     );

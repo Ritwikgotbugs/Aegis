@@ -102,4 +102,13 @@ button {
 
 .generate-button {
     margin: 10px;
+    transition: 0.1s ease-in-out;
+}
+
+.check-button {
+    transition: 0.1s ease-in-out;
+}
+
+.generate-button:active, .check-button:active {
+    transform: scale(0.9);
 }
