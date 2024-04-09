@@ -127,7 +127,7 @@ export function About(){
   };
 
   const handleValidation = async (outputValue) => {
-    const userInput = outputValue + "find security flaws in the code and be specific and provide brief solution for those,first provide flaws then the solutions    ";
+    const userInput = outputValue + "find security flaws in the code and only give the rectified code without any explanation  ";
 
     const model = genAI.getGenerativeModel({ model: "gemini-pro" });
 
