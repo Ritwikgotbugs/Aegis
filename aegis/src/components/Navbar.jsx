@@ -14,7 +14,7 @@ function Navbar() {
       </div>
       <div className='right_side'>
         <Link to="/">Home</Link>
-        <Link to="/about">About</Link>
+        <Link to="/about">Analyse</Link>
         <Link to="/test">Test</Link>
       </div>
     </div>
