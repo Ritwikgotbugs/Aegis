@@ -1,0 +1,54 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-top: 100px;
+}
+
+.left-side {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.prompt, .output {
+    flex: 1;
+    background-color: rgba(128, 128, 128, 0.466);
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.prompt {
+    height: 50px;
+}
+.output {
+    height: 400px;
+}
+
+.right-side {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.validated {
+    margin: 20px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(128, 128, 128, 0.466);
+    border-radius: 10px;
+}
+
+div#root {
+    padding: 0;
+    margin: 0;
+}
